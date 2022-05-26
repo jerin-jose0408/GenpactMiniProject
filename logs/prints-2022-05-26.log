@@ -1,0 +1,7 @@
+22:01:31.636 {main} INFO  stepdefinition.StepDefinition -User entered username and password
+22:01:32.649 {main} INFO  stepdefinition.StepDefinition -User logged in
+22:01:32.665 {main} INFO  stepdefinition.StepDefinition -User logged out
+22:01:39.289 {main} INFO  stepdefinition.StepDefinition -User logged in
+22:01:43.389 {main} INFO  stepdefinition.StepDefinition -Requesting loan
+22:01:49.451 {main} INFO  stepdefinition.StepDefinition -User logged in
+22:01:57.681 {main} INFO  stepdefinition.StepDefinition -Transferrring funds

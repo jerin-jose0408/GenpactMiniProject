@@ -7,4 +7,4 @@ Then Verify transfer is successful
 
 Examples:
 |value	|from		|to		|
-|100	|13344		|1		|
+|100	|0			|1		|

@@ -23,13 +23,13 @@ public class Base {
 	{
 		Properties prop=new Properties();
 
-		FileInputStream fis=new FileInputStream("C:\\Users\\703316032\\Eclipse\\MavenProject\\com.genpact.test\\src\\main\\java\\MavenProject\\com\\genpact\\test\\data.properties");
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//data.properties");
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
 
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver","C://Users//703316032//Eclipse//MavenProject//com.genpact.test//chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("firefox"))

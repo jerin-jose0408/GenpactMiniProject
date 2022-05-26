@@ -37,7 +37,7 @@ public class TransferFundObjects {
 	{
 		staticdropdown=driver.findElement(fromAccountId);
 		dropdown=new Select(staticdropdown);	
-		dropdown.selectByVisibleText(from);
+		dropdown.selectByIndex(Integer.parseInt(from));
 	}
 
 	public void setToAccount(String to) throws InterruptedException

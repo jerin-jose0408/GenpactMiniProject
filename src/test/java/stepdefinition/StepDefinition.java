@@ -7,10 +7,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.genpact.miniproject.CucumberProject.AccountsOverviewObjects;
 import com.genpact.miniproject.CucumberProject.Base;
 import com.genpact.miniproject.CucumberProject.BillPayObjects;
+
 import com.genpact.miniproject.CucumberProject.FindTransactionObjects;
 import com.genpact.miniproject.CucumberProject.HomePageObjects;
 import com.genpact.miniproject.CucumberProject.LoginPageObjects;
@@ -24,9 +26,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import org.apache.logging.log4j.*;
+
+
 
 public class StepDefinition extends Base{
 
+	private static Logger log=LogManager.getLogger(StepDefinition.class.getName());
 	//Initialization of all the page objects
 	LoginPageObjects lpo,lpo1;
 	HomePageObjects hpo;
@@ -36,14 +42,18 @@ public class StepDefinition extends Base{
 	FindTransactionObjects fto;
 	UpdateContactInfoObjects ucio;
 	RequestLoanObjects rlo;
-
+	
 	//Login and logout scenario
 	@Given("^User launches \"([^\"]*)\" portal$")
 	public void loginPage(String url) throws IOException
 	{
+		
 		driver=initializeDriver();
+		log.info("Browser Initialized");
 		driver.get(url);
+		log.info("URL entered into browser");
 		driver.manage().window().maximize();
+		log.info("Browser maximized");
 
 	}
 	@When("^User Logs into the application with \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -53,14 +63,20 @@ public class StepDefinition extends Base{
 		lpo=new LoginPageObjects(driver);
 		lpo.getUsername().sendKeys(username);
 		lpo.getPassword().sendKeys(password);
+		log.info("User entered username and password");
+		
 	}
+	@Test
 	@Then("^Home Page is navigated and user logged out$")
 	public void click()
 	{
 
 		lpo.getLogin().click();
+		log.info("User logged in");
 		hpo=new HomePageObjects(driver);
 		hpo.getLogout();
+		log.info("User logged out");
+		
 		driver.close();
 	}
 	//Create new account scenario, contains both savings and checking
@@ -76,6 +92,7 @@ public class StepDefinition extends Base{
 		lpo1.getUsername().sendKeys(username);
 		lpo1.getPassword().sendKeys(password);
 		lpo1.getLogin().click();
+		log.info("User logged in");
 	}
 	@When("^User clicks on Open New Account with (.+) and (.+)$")
 	public void openNewAccount(String type,String index) throws InterruptedException
@@ -89,6 +106,7 @@ public class StepDefinition extends Base{
 		nao.setAccountId(Integer.valueOf(index));
 		Thread.sleep(1000);
 		nao.getOpenNewAccount().click();
+		log.info("A new account is created");
 	}
 	@Then("^Verify a new account is created$")
 	public void verifyAccountCreated() throws InterruptedException
@@ -104,7 +122,8 @@ public class StepDefinition extends Base{
 	{
 		hpo=new HomePageObjects(driver);
 
-		hpo.getAccountsOverview().click();	
+		hpo.getAccountsOverview().click();
+		log.info("User navigated to Accounts overview page");
 		Thread.sleep(1000);
 	}
 	@Then("^Verify the total matches the sum of balances$")
@@ -132,6 +151,7 @@ public class StepDefinition extends Base{
 			else
 				total=value[i];
 		}
+		log.info("Checking the balance amount with the total");
 		Assert.assertEquals(balance, total);
 		driver.close();
 	}
@@ -152,6 +172,7 @@ public class StepDefinition extends Base{
 		Thread.sleep(1000);
 		tao.getTransfer().click();
 		Thread.sleep(1000);
+		log.info("Transferrring funds");
 	}
 	@Then("^Verify transfer is successful$")
 	public void verifyFundsTransfered() throws InterruptedException
@@ -177,6 +198,7 @@ public class StepDefinition extends Base{
 		Thread.sleep(1000);
 		bpo.getSendPayment().click();
 		Thread.sleep(1000);
+		log.info("Paying Bill");
 	}
 	@Then("bill pay should be successful")
 	public void bill_pay_should_be_successful() {
@@ -195,6 +217,7 @@ public class StepDefinition extends Base{
 		Thread.sleep(500);
 		fto.getTransaction().click();
 		Thread.sleep(1000);
+		log.info("Finding transaction by amount");
 	}
 	@Then("Verify find transaction is successful")
 	public void verify_find_transaction_is_successful() {
@@ -220,7 +243,7 @@ public class StepDefinition extends Base{
 		Thread.sleep(1000);
 		ucio.getUpdateProfile().click();
 		Thread.sleep(1000);
-
+		log.info("Updating contact details");
 	}
 	@Then("Verify contact details is updated")
 	public void verify_contact_details_is_updated() {
@@ -239,6 +262,8 @@ public class StepDefinition extends Base{
 		Thread.sleep(1000);
 		rlo.getApplyNow().click();
 		Thread.sleep(1000);
+		
+		log.info("Requesting loan");
 	}
 	@Then("Verify that user is able to request loan")
 	public void verify_that_user_is_able_to_request_loan() {
