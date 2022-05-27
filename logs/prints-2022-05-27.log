@@ -1,0 +1,6 @@
+17:15:21.222 {main} INFO  stepdefinition.RequestLoan -Requesting loan
+17:15:37.221 {main} INFO  stepdefinition.CreateAccount -User logged in
+17:15:45.124 {main} INFO  stepdefinition.Login -Transferrring funds
+17:15:45.154 {AsyncHttpClient-1-9} TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder -Encoding WebSocket Frame opCode=8 length=26
+17:15:51.812 {main} INFO  stepdefinition.CreateAccount -User logged in
+17:15:58.025 {main} INFO  stepdefinition.UpdateContact -Updating contact details

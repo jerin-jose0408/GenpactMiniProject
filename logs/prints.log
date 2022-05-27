@@ -1,2 +1,1 @@
-22:02:03.790 {main} INFO  stepdefinition.StepDefinition -User logged in
-22:02:09.638 {main} INFO  stepdefinition.StepDefinition -Updating contact details
+17:15:58.061 {AsyncHttpClient-1-12} TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder -Encoding WebSocket Frame opCode=8 length=26

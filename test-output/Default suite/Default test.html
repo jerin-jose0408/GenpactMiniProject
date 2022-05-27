@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 26 22:00:29 IST 2022</td>
+<td>Started on:</td><td>Fri May 27 17:13:43 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>100 seconds (100220 ms)</td>
+<tr><td>Total time:</td><td>135 seconds (135479 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,24 +75,28 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sum of balance matches the total", "Account Overview"</td>
-<td><div><pre>java.lang.AssertionError: expected [-6961.07] but found [-6961.0703]
+<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to request loan", "Request Loan"</td>
+<td><div><pre>java.lang.AssertionError: expected [Loan Request Processed] but found [Apply for a Loan]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEquals(Assert.java:774)
-	at org.testng.Assert.assertEquals(Assert.java:785)
-	at stepdefinition.StepDefinition.sum_matches_total(StepDefinition.java:155)
-	at ?.Verify the total matches the sum of balances(file:///C:/Users/703316032/Eclipse/CucumberProject/src/test/java/features/AccountOverview.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace409778321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace409778321'><pre>java.lang.AssertionError: expected [-6961.07] but found [-6961.0703]
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at stepdefinition.RequestLoan.verify_that_user_is_able_to_request_loan(RequestLoan.java:35)
+	at ?.Verify that user is able to request loan(file:///C:/Users/703316032/Eclipse/CucumberProject/resources/features/RequestLoan.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace61334373", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace61334373'><pre>java.lang.AssertionError: expected [Loan Request Processed] but found [Apply for a Loan]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEquals(Assert.java:774)
-	at org.testng.Assert.assertEquals(Assert.java:785)
-	at stepdefinition.StepDefinition.sum_matches_total(StepDefinition.java:155)
-	at ?.Verify the total matches the sum of balances(file:///C:/Users/703316032/Eclipse/CucumberProject/src/test/java/features/AccountOverview.feature:6)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at stepdefinition.RequestLoan.verify_that_user_is_able_to_request_loan(RequestLoan.java:35)
+	at ?.Verify that user is able to request loan(file:///C:/Users/703316032/Eclipse/CucumberProject/resources/features/RequestLoan.feature:6)
 </pre></div></td>
-<td>13</td>
+<td>11</td>
 <td>cucumberoptions.TestRunner@376b4233</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -103,44 +107,44 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid Home page login", "Application Login"</td>
-<td></td>
-<td>6</td>
-<td>cucumberoptions.TestRunner@376b4233</td></tr>
-<tr>
-<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User creates a new Account", "Open New Account"</td>
-<td></td>
-<td>10</td>
-<td>cucumberoptions.TestRunner@376b4233</td></tr>
-<tr>
-<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to request loan", "Request Loan"</td>
-<td></td>
-<td>10</td>
-<td>cucumberoptions.TestRunner@376b4233</td></tr>
-<tr>
-<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should be able to transfer fund", "Transfer Fund"</td>
-<td></td>
-<td>14</td>
-<td>cucumberoptions.TestRunner@376b4233</td></tr>
-<tr>
-<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User pays the bill with different data", "Bill Pay"</td>
+<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to change phone no", "Update Contact Info"</td>
 <td></td>
 <td>12</td>
 <td>cucumberoptions.TestRunner@376b4233</td></tr>
 <tr>
 <td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User creates a new Account", "Open New Account"</td>
 <td></td>
-<td>10</td>
+<td>11</td>
 <td>cucumberoptions.TestRunner@376b4233</td></tr>
 <tr>
-<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to change phone no", "Update Contact Info"</td>
+<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User creates a new Account", "Open New Account"</td>
 <td></td>
 <td>11</td>
 <td>cucumberoptions.TestRunner@376b4233</td></tr>
 <tr>
 <td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user is able to Find Transaction by Amount", "Find Transaction"</td>
 <td></td>
-<td>9</td>
+<td>22</td>
+<td>cucumberoptions.TestRunner@376b4233</td></tr>
+<tr>
+<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sum of balance matches the total", "Account Overview"</td>
+<td></td>
+<td>16</td>
+<td>cucumberoptions.TestRunner@376b4233</td></tr>
+<tr>
+<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User pays the bill with different data", "Bill Pay"</td>
+<td></td>
+<td>18</td>
+<td>cucumberoptions.TestRunner@376b4233</td></tr>
+<tr>
+<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should be able to transfer fund", "Transfer Fund"</td>
+<td></td>
+<td>24</td>
+<td>cucumberoptions.TestRunner@376b4233</td></tr>
+<tr>
+<td title='cucumberoptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberoptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid Home page login", "Application Login"</td>
+<td></td>
+<td>6</td>
 <td>cucumberoptions.TestRunner@376b4233</td></tr>
 </table><p>
 </body>

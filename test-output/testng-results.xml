@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="100220" started-at="2022-05-26T22:00:29 IST" finished-at="2022-05-26T22:02:09 IST">
+  <suite name="Default suite" duration-ms="135479" started-at="2022-05-27T17:13:43 IST" finished-at="2022-05-27T17:15:58 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="100220" started-at="2022-05-26T22:00:29 IST" finished-at="2022-05-26T22:02:09 IST">
+    <test name="Default test" duration-ms="135479" started-at="2022-05-27T17:13:43 IST" finished-at="2022-05-27T17:15:58 IST">
       <class name="cucumberoptions.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="setUpClass" is-config="true" duration-ms="206" started-at="2022-05-26T22:00:29 IST" finished-at="2022-05-26T22:00:30 IST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="setUpClass" is-config="true" duration-ms="241" started-at="2022-05-27T17:13:43 IST" finished-at="2022-05-27T17:13:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1a531422]]>
+                <![CDATA[org.testng.TestRunner@18709cb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="13152" started-at="2022-05-26T22:00:30 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T22:00:43 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="16040" started-at="2022-05-27T17:13:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T17:13:59 IST">
           <params>
             <param index="0">
               <value>
@@ -34,25 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [-6961.07] but found [-6961.0703]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [-6961.07] but found [-6961.0703]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEquals(Assert.java:774)
-at org.testng.Assert.assertEquals(Assert.java:785)
-at stepdefinition.StepDefinition.sum_matches_total(StepDefinition.java:155)
-at ✽.Verify the total matches the sum of balances(file:///C:/Users/703316032/Eclipse/CucumberProject/src/test/java/features/AccountOverview.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="12080" started-at="2022-05-26T22:00:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T22:00:55 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="18052" started-at="2022-05-27T17:13:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T17:14:17 IST">
           <params>
             <param index="0">
               <value>
@@ -68,7 +53,7 @@ at ✽.Verify the total matches the sum of balances(file:///C:/Users/703316032/E
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="10676" started-at="2022-05-26T22:00:55 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T22:01:05 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="11232" started-at="2022-05-27T17:14:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T17:14:29 IST">
           <params>
             <param index="0">
               <value>
@@ -84,7 +69,7 @@ at ✽.Verify the total matches the sum of balances(file:///C:/Users/703316032/E
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="10985" started-at="2022-05-26T22:01:05 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T22:01:16 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="11885" started-at="2022-05-27T17:14:29 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T17:14:41 IST">
           <params>
             <param index="0">
               <value>
@@ -100,7 +85,7 @@ at ✽.Verify the total matches the sum of balances(file:///C:/Users/703316032/E
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="9669" started-at="2022-05-26T22:01:16 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T22:01:26 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="22541" started-at="2022-05-27T17:14:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T17:15:03 IST">
           <params>
             <param index="0">
               <value>
@@ -116,7 +101,7 @@ at ✽.Verify the total matches the sum of balances(file:///C:/Users/703316032/E
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="6170" started-at="2022-05-26T22:01:26 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T22:01:32 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="6373" started-at="2022-05-27T17:15:03 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T17:15:09 IST">
           <params>
             <param index="0">
               <value>
@@ -132,7 +117,7 @@ at ✽.Verify the total matches the sum of balances(file:///C:/Users/703316032/E
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="10795" started-at="2022-05-26T22:01:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T22:01:43 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="11328" started-at="2022-05-27T17:15:09 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T17:15:21 IST">
           <params>
             <param index="0">
               <value>
@@ -145,10 +130,27 @@ at ✽.Verify the total matches the sum of balances(file:///C:/Users/703316032/E
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Loan Request Processed] but found [Apply for a Loan]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Loan Request Processed] but found [Apply for a Loan]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepdefinition.RequestLoan.verify_that_user_is_able_to_request_loan(RequestLoan.java:35)
+at ✽.Verify that user is able to request loan(file:///C:/Users/703316032/Eclipse/CucumberProject/resources/features/RequestLoan.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="14227" started-at="2022-05-26T22:01:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T22:01:57 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="24569" started-at="2022-05-27T17:15:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T17:15:45 IST">
           <params>
             <param index="0">
               <value>
@@ -164,7 +166,7 @@ at ✽.Verify the total matches the sum of balances(file:///C:/Users/703316032/E
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="11970" started-at="2022-05-26T22:01:57 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T22:02:09 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="runScenario" duration-ms="12908" started-at="2022-05-27T17:15:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T17:15:58 IST">
           <params>
             <param index="0">
               <value>
@@ -180,7 +182,7 @@ at ✽.Verify the total matches the sum of balances(file:///C:/Users/703316032/E
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2022-05-26T22:02:09 IST" finished-at="2022-05-26T22:02:09 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberoptions.TestRunner@376b4233]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2022-05-27T17:15:58 IST" finished-at="2022-05-27T17:15:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

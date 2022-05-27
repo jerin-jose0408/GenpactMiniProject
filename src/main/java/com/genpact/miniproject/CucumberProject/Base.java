@@ -10,6 +10,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
+
 /**Contains the base class which has all the initialization functionality
  * 
  * @author 703316032
@@ -17,12 +19,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class Base {
 	public static WebDriver driver;
+	static Properties prop=new Properties();
+
+	private static Base base;
+	
 
 	@SuppressWarnings("deprecation")
-	public WebDriver initializeDriver() throws IOException
+	public Base() throws IOException
 	{
-		Properties prop=new Properties();
-
 		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//data.properties");
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
@@ -31,6 +35,9 @@ public class Base {
 		{
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//chromedriver.exe");
 			driver=new ChromeDriver();
+			driver.get(prop.getProperty("url"));
+			driver.manage().window().maximize();
+
 		}
 		else if(browserName.equalsIgnoreCase("firefox"))
 		{
@@ -41,7 +48,27 @@ public class Base {
 			//Initialize for IE
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		return driver;
-
+		
 	}
+	
+	public static WebDriver getDriver()
+	{
+		return Base.driver;
+		
+	}
+	
+	public static void setupDriver() throws IOException
+	{
+		if(base==null)
+		{
+			base=new Base();
+		}
+	}
+	
+	public static void tearDown()
+	{
+		base=null;
+		driver.quit();
+	}
+
 }
